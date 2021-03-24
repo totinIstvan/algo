@@ -5,6 +5,11 @@ import java.util.List;
 public class OddNumbers {
 
     public static Integer sum(List<Integer> numbers) {
-        return null;
+        Integer sum = 0;
+
+        for(Integer num : numbers) {
+            sum += num % 2 != 0 ? num : 0;
+        }
+        return sum;
     }
 }
